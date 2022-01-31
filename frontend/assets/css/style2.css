@@ -1,0 +1,36 @@
+.letterP3 {
+
+    margin-top: 200px;
+    margin-left: 180px;
+  -webkit-transform: rotate(90deg); 
+     -moz-transform: rotate(90deg); 
+      -ms-transform: rotate(90deg); 
+       -o-transform: rotate(90deg); 
+          transform: rotate(90deg);
+            color: #000;
+            font-size: 22px;                
+            height: 200px;
+            width: 200px;
+float: left;        
+    vertical-align:top;    
+      justify-content: center;
+}
+.letterP5
+{
+    margin-left: 400px;
+}
+
+.letterP4 {     
+  -webkit-transform: rotate(-90deg); 
+     -moz-transform: rotate(-90deg); 
+      -ms-transform: rotate(-90deg); 
+       -o-transform: rotate(-90deg); 
+          transform: rotate(-90deg);
+            color: #000;
+            font-size: 22px;                
+            height: 200px;
+            width: 200px;
+    float: left;
+    vertical-align:top;
+    text-align: center;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Car Beecho</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style2.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo mr-auto"><a href="index.html">Car Becho</a></h1>
+          
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Price Trends</a>
+                        <ul>
+                            <li><a id="id1">Engine(CC) vs price </a></li>
+
+                            <li>
+                                <a id="id2">cars sold</a>
+                            </li>
+                            <li>
+                                <a id="id3">Power(bhp) vs price</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+            <a href="./predictprice.html" class="get-started-btn scrollto">Get Started</a>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <section id="hero" class="d-flex align-items-center" data-aos="fade-up">
+
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h1>Best Price </h1>
+                    <h2>We are team of talanted engineers who will provide best price for your used car</h2>
+                    <div class="d-lg-flex">
+                        <a href="./predictprice.html" class="btn-get-started scrollto">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/img/87126732-sale-of-a-new-car-the-seller-at-the-car-showroom-shows-the-vehicle-vector-illustration-in-cartoon-st.jpg"
+                        class="img-fluid animated   " alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <!-- End Hero -->
+
+    <h4 class="letterP3" id="ylabel">We are team of</h4>
+
+
+    <div class="container" data-aos="fade-up">
+        <div class="card shadow mb-4" data-aos="fade-up">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" data-aos="fade-up">
+                <h6 class="m-0 font-weight-bold text-primary">Price Overview</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body" data-aos="fade-up">
+                <div class="chart-area" data-aos="fade-up" id="canvas-id">
+                    <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-monitor-expand">
+                            <div class=""></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink">
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    <canvas class="my-4 w-100 chartjs-render-monitor" id="buyers" width="769" height="724"
+                        style="display: block; width: 769px; height: 324px;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container d-flex align-items-center">
+    <h4 class="letterP5" id="xlabel">We are team of</h4>
+    </div>
+
+ 
+
+    <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+
+            </div>
+            <div class="faq-list">
+                <ul>
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <i class="bx bx-help-circle icon-help"></i>
+                        <a data-toggle="collapse" class="collapse" href="#faq-list-1"> <i
+                                class="bx bx-chevron-down icon-show"></i>What makes CARS Beecho the best place to sell
+                            my car?<i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                            <p>
+                                Prices we offer for your used car are based on its condition as well as the market
+                                factors - the only unbiased engine to calculate the best price for your car.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
+                            class="collapsed">How does Car Becho works<i class="bx bx-chevron-down icon-show"></i><i
+                                class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Car becho uses machine learning to predict the price of your car
+
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
+                            class="collapsed">Will you charge me for my car's inspection?
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                            <p>
+                                No, CARS Becho inspection process at all our retail branches is absolutely free
+                            </p>
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    </main>
+
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+
+
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Car Becho</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="lib/year-select.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

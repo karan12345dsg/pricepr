@@ -1,0 +1,23 @@
+ <div class="row mx-ato" data-aos="fade-up">
+        <div class="col-lg-4" data-aos="fade-up">
+            <img src="./Untitled1.png" class="img-responsive" alt="">
+            <h2>Online Evaluation</h2>
+            <P>Enter your car details and get an instant price.</P>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4 " data-aos="fade-up">
+            <img src="./Untitled2.png" class="img-responsive" alt="">
+
+            <h2>Free Inspection</h2>
+
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4 " data-aos="fade-up">
+            <img src="./Untitled3.png" class="img-responsive" alt="">
+
+            <h2>Get the best price within few seconds</h2>
+            <p>
+            </p>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
